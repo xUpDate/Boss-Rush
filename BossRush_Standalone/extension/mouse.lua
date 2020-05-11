@@ -25,6 +25,8 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 						octo_manip = false
 						maz_fix = false
 						v1_fix = false
+						memory.write_u16_le(0x02002C9E, 0xEFBC) -- Mazaal Hands Fix / + Ezlo
+						memory.writebyte(0x030010D9, 0x5A)
 					elseif mouse["X"] >= 25 and mouse["X"] <= 55 then
 						options = not options
 					end
