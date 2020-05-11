@@ -23,6 +23,8 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 						time_reset = false
 						time_switch = false
 						octo_manip = false
+						maz_fix = false
+						v1_fix = false
 					elseif mouse["X"] >= 25 and mouse["X"] <= 55 then
 						options = not options
 					end
