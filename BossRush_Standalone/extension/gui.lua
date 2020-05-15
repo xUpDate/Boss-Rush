@@ -21,16 +21,16 @@ function boxes()
 			gui.pixelText(10,3, "Full Inventory", 0xE0FFFFFF, 0x00FFFFFF)
 			if modes.full_inventory == true then gui.drawBox(4,4, 7,7, 0x8003fc0f, 0x8003fc0f) end
 			-- Vanilla Items
-			gui.drawBox(3,10, 8,15, "white", 0x85363fe3)
-			gui.pixelText(10,10, "Vanilla Items", 0xE0FFFFFF, 0x00FFFFFF)
-			if modes.vanilla_items == true then gui.drawBox(4,11, 7,14, 0x8003fc0f, 0x8003fc0f) end
+			--gui.drawBox(3,10, 8,15, "white", 0x85363fe3)
+			--gui.pixelText(10,10, "Vanilla Items", 0xE0FFFFFF, 0x00FFFFFF)
+			--if modes.vanilla_items == true then gui.drawBox(4,11, 7,14, 0x8003fc0f, 0x8003fc0f) end
 			
-			choice(7*4, 1, bosses.chu, "Big Green Chu")
-			choice(7*5, 2, bosses.glee, "Gleerok")
-			choice(7*6, 3, bosses.maz, "Mazaal")
-			choice(7*7, 4, bosses.octo, "Big Octorok")
-			choice(7*8, 5, bosses.gyorg, "Gyorg Pair")
-			choice(7*9, 6, bosses.vaati, "Vaati")
+			--choice(7*4, 1, bosses.chu, "Big Green Chu")
+			--choice(7*5, 2, bosses.glee, "Gleerok")
+			--choice(7*6, 3, bosses.maz, "Mazaal")
+			--choice(7*7, 4, bosses.octo, "Big Octorok")
+			--choice(7*8, 5, bosses.gyorg, "Gyorg Pair")
+			--choice(7*9, 6, bosses.vaati, "Vaati")
 			
 		end
 	elseif boss_rush == true then

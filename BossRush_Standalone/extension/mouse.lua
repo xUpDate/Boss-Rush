@@ -47,14 +47,14 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 				
 			if options == true then
 				handle_radio(3,8,3,8, "full_inventory", modes)
-				handle_radio(3,8,10,15, "vanilla_items",modes)
-				
-				handle_radio(3,8,8*4, 8*4+5, "chu", bosses)
-				handle_radio(3,8,8*5, 8*5+5, "glee", bosses)
-				handle_radio(3,8,8*6, 8*6+5, "maz", bosses)
-				handle_radio(3,8,8*7, 8*7+5, "octo", bosses)
-				handle_radio(3,8,8*8, 8*8+5, "gyorg", bosses)
-				handle_radio(3,8,8*9, 8*9+5, "vaati", bosses)
+				--handle_radio(3,8,10,15, "vanilla_items",modes)
+				--
+				--handle_radio(3,8,8*4, 8*4+5, "chu", bosses)
+				--handle_radio(3,8,8*5, 8*5+5, "glee", bosses)
+				--handle_radio(3,8,8*6, 8*6+5, "maz", bosses)
+				--handle_radio(3,8,8*7, 8*7+5, "octo", bosses)
+				--handle_radio(3,8,8*8, 8*8+5, "gyorg", bosses)
+				--handle_radio(3,8,8*9, 8*9+5, "vaati", bosses)
 			end
 		elseif boss_rush == true then
 			if mouse["X"] >= 211 and mouse["X"] <= 238 and mouse["Y"] >= 150 and mouse["Y"] <= 158 then
