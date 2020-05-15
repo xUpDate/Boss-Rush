@@ -46,7 +46,7 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 				end
 				
 			if options == true then
-				handle_radio(3,8,3,8, "full_inventory", modes)
+				--handle_radio(3,8,3,8, "full_inventory", modes)
 				--handle_radio(3,8,10,15, "vanilla_items",modes)
 				--
 				--handle_radio(3,8,8*4, 8*4+5, "chu", bosses)
