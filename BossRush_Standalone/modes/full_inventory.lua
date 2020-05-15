@@ -1,6 +1,6 @@
 function bottles()
 	if boss_rush == true then
-		if full_inventory == true then
+		if modes.full_inventory == true then
 				if boss_rush_items == false then
 						addFlag(0x02002B32, 0x55) -- Items
 						addFlag(0x02002B33, 0x51)

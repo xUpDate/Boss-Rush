@@ -7,7 +7,6 @@ end_time_ms = 0
 time_switch = false
 time_start = false
 
-
 function boss_rush_time()
 if boss_rush == true then
 	if mrb(area) == 0x49 then
@@ -47,6 +46,14 @@ time_current = socket.gettime() - time_static
 					end_time_secs = secs
 					end_time_ms = ms
 					time_switch = true
+					text_file = io.open("BossRush Times.txt", "a")
+					text_file:write(os.date("----- %d.%m.%Y -----") .. "\n" .. "Big Green Chu: " .. chu_mins .. ":" .. chu_secs .. ":" .. chu_ms .. "\n"
+										.. "Gleerok: " .. glee_mins .. ":" .. glee_secs .. ":" .. glee_ms .. "\n" 
+										.. "Mazaal: " .. maz_mins .. ":" .. maz_secs .. ":" .. maz_ms .. "\n" 
+										.. "Big Octorok: " .. octo_mins .. ":" .. octo_secs .. ":" .. octo_ms .. "\n" 
+										.. "Gyorg Pair: " .. gyorg_mins .. ":" .. gyorg_secs .. ":" .. gyorg_ms .. "\n" 
+										.. "Vaati: " .. end_time_mins .. ":" .. end_time_secs .. ":" .. end_time_ms .. "\n\n\n")
+					text_file:close()
 				end
 		end
 	end

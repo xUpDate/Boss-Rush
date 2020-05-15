@@ -3,9 +3,13 @@ options = false
 warped = false
 mouse_switch = false
 boss_rush_items = false
+vaati2_id = false
+timer_write = false
 
-full_inventory = true
+modes = {
+full_inventory = true,
 vanilla_items = false
+}
 
 timer = false
 
@@ -18,6 +22,15 @@ gyorg_kill = false,
 vaati1_kill = false,
 vaati2_kill = false,
 vaati3_kill = false
+}
+
+bosses = {
+chu = false,
+glee = false,
+maz = false,
+octo = false,
+gyorg = false,
+vaati = false
 }
 
 boss_flags = {
