@@ -1,4 +1,5 @@
 boss_rush = false
+single = false
 options = false
 warped = false
 mouse_switch = false
@@ -30,7 +31,8 @@ glee = false,
 maz = false,
 octo = false,
 gyorg = false,
-vaati = false
+vaati = false,
+all = true
 }
 
 boss_flags = {

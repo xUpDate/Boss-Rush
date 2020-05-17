@@ -1,19 +1,19 @@
 require('socket.core')
 
-require("libraries\\boss_kill_variables")
-require("libraries\\tmc_library")
+dofile("libraries\\boss_kill_variables.lua")
+dofile("libraries\\tmc_library.lua")
 
-require("modes\\full_inventory")
-require("modes\\vanilla_items")
+dofile("modes\\full_inventory.lua")
+dofile("modes\\vanilla_items.lua")
 
-require("extension\\gui")
-require("extension\\mouse")
-require("extension\\warps")
-require("extension\\added_functions")
-require("extension\\fixes")
-require("extension\\time")
+dofile("extension\\gui.lua")
+dofile("extension\\mouse.lua")
+dofile("extension\\warps.lua")
+dofile("extension\\added_functions.lua")
+dofile("extension\\fixes.lua")
+dofile("extension\\time.lua")
 
-require("times\\chu_time")
+dofile("times\\chu_time.lua")
 
 while true do
 mouse_input()
