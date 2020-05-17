@@ -31,7 +31,7 @@ time_current = socket.gettime() - time_static
     msecs = string.format("%02.f",math.floor(((time_current) - hours*3600 - mins *60 - secs)*1000))
 	ms = string.format("%02d", msecs/10)
 	
-	if time_switch == false then
+	if time_switch == false and single == false then
 		gui.pixelText(1,152, "Time: " .. mins .. ":" .. secs .. ":" .. ms)
 	elseif time_switch == true then
 		--gui.pixelText(1,152, "Time: " .. end_time_mins .. ":" .. end_time_secs .. ":" .. end_time_ms)
