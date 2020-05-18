@@ -25,6 +25,7 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 			if boss_rush == false then
 				if mouse["Y"] >= 150 and mouse["Y"] <= 158 then
 					if mouse["X"] >= 1 and mouse["X"] <= 23 then
+						savestate.save("default")
 						subFlag(0x02002DAB, 0x08)
 						mwb(max_health, 0xA0)
 						mwb(current_health, 0xA0)
@@ -60,7 +61,7 @@ if memory.readbyte(0x03001002) == 0x02 or memory.readbyte(0x03001002) == 0x04 th
 		elseif boss_rush == true then
 			if mouse["X"] >= 211 and mouse["X"] <= 238 and mouse["Y"] >= 150 and mouse["Y"] <= 158 then
 				boss_rush = false
-				res()
+				savestate.load("default")
 				mouse_switch = true
 				warped = false
 				single = false
