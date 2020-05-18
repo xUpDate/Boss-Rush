@@ -15,8 +15,8 @@ function bottles()
 						addFlag(0x02002B45, 0x55) -- Scrolls: Sword Beam / Great Spin Attack / Downthrust / Peril Beam
 						addFlag(0x02002B4E, 0x55) -- Butterflies + Fast Spin Charge
 						addFlag(0x02002B4F, 0x05) -- Split Gauge / Longer Spin Attack
-						addFlag(0x02002AEE, 0x03) -- Big Bomb Bag
-						addFlag(0x02002AEF, 0x03) -- Big Quiver
+						mwb(0x02002AEE, 0x3) -- Big Bomb Bag
+						mwb(0x02002AEF, 0x3)
 						addFlag(0x02002B4B, 0x10) -- Big Quiver
 						addFlag(0x02002B4B, 0x10) -- Big Quiver
 						addFlag(0x02002CE6, 0x40) -- Big Quiver
