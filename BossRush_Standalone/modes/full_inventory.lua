@@ -18,7 +18,6 @@ function bottles()
 						mwb(0x02002AEE, 0x3) -- Big Bomb Bag
 						mwb(0x02002AEF, 0x3)
 						addFlag(0x02002B4B, 0x10) -- Big Quiver
-						addFlag(0x02002B4B, 0x10) -- Big Quiver
 						addFlag(0x02002CE6, 0x40) -- Big Quiver
 						addFlag(0x02002CEF, 0x40) -- Big Quiver
 					mwb(0x02002AF6, 0x28) -- Fairy
